@@ -3,11 +3,25 @@
 
 #include "pch.h"
 #include <iostream>
+#include "AddFunction.h"
+
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n"; 
+	double happy, go;
+	cout << "Enter a number: ";
+	cin >> happy;
+	cout << "\n\nEnter another number to add to the first: ";
+	cin >> go;
+
+
+	double a = add(happy, go);
+	cout << "\n\nThe result of " << happy << " + " << go << " is " << a;
+	cout << "\n\n\n";
+	return 0;
 }
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
